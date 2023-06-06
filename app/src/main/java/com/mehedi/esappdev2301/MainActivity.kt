@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
 
+
     var isOpen = false
 
 
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding.showDetailsBtn.setOnClickListener {
 
 
+
             visibilityHandle(binding.detailsText, binding.showDetailsBtn)
 
         }
@@ -33,6 +35,21 @@ class MainActivity : AppCompatActivity() {
 
 
             visibilityHandle(binding.detailsText2, binding.showDetailsBtn2)
+
+//            if (isOpen2 == false) {
+//
+//                binding.detailsText2.visibility = View.VISIBLE
+//                isOpen2 = true
+//
+//                binding.showDetailsBtn2.text = "Show Less"
+//            } else {
+//
+//                binding.detailsText2.visibility = View.GONE
+//                isOpen2 = false
+//
+//                binding.showDetailsBtn2.text = "Show Details"
+//
+//            }
 
 
         }
